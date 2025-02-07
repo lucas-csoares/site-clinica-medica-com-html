@@ -1,74 +1,116 @@
-# Trilha HTML - Dio.me
-## Módulo 02 - HTML I - Conceitos Básicos
+# 🏥 Clínica Médica MedVida
 
-Este desafio tem como objetivo, criar um site "quase" completo, com tudo o que vimos neste módulo. Os temas que deverão ser abordados são:
-- Formulários
-- Estruturação e formatação de texto
-- Mídias
-- Tabelas
+Este é um projeto para o desenvolvimento do site da **Clínica Médica MedVida**, que oferece atendimento especializado em diversas áreas da saúde, incluindo **Cardiologia, Ginecologia e Neurologia**. O site tem como objetivo fornecer informações detalhadas sobre a clínica, especialidades, horários de atendimento, valores e contato.
 
-Além de outros recursos falados nas aulas!
+---
 
-## Instruções
-1. Você deve criar um site de uma clínica médica (você escolhe a especialidade)
-2. Este site deve conter o seguinte menu de navegação:
-    - Página Principal
-    - Sobre a clínica
-    - Horário de Atendimento
-    - Contato
-3. Deve, obrigatoriamente, utilizar todas os assuntos abordados nas aulas.
+## 🌟 Funcionalidades
 
-Abaixo como cada página deve ser criada e estruturada.
+- 📌 Página inicial com informações sobre a clínica.
+- 🏥 Apresentação das **especialidades médicas** e detalhes de atendimento.
+- 🕒 **Tabela de horários** para facilitar a marcação de consultas.
+- 💰 **Tabela de preços** com valores para cada serviço por dia da semana.
+- 📍 **Mapa de localização** via Google Maps.
+- 📧 **Formulário de contato** para envio de mensagens diretamente pelo site.
 
-### Estrutura das páginas
+---
 
-Todas as páginas terão que seguir um padrão pré-definido. Como não aprendemos sobre CSS ainda, utilize o arquivo `template.html` para utilizar como base. Ele segue uma estrutura semelhante a image abaixo.
+## 📜 Índice
 
-![Estrutura](https://i.stack.imgur.com/9jI6f.gif)
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Ferramentas Utilizadas](#ferramentas-utilizadas)
+3. [Estrutura do Projeto](#estrutura-do-projeto)
+4. [Visualização](#visualização)
+5. [Referências](#referências)
+6. [Autor](#autor)
 
-\* _No template tem algumas cores mas é apenas para melhor visualização. Fique a vontade para alterar da melhor forma._
+---
 
-No **Menu**, ficará localizado o menu de navegação (ah vá!), no **Header** de cada página ficará uma imagem, no **Footer** informações de contato, e o **Content** é o conteúdo de cada página.
-### Página Principal
-1. Deve ter uma imagem no **Header**.
-2. Em **Content** uma breve descrição sobre a clínica.
-3. **Menu** e **Footer** padrões em todas as páginas.
+## 📝 Sobre o Projeto
 
-### Sobre a clínica
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** um texto falando sobre a clínica.
-3. **Menu** e **Footer** padrões em todas as páginas.
+Este site foi desenvolvido para oferecer uma **experiência intuitiva e prática** para os pacientes da Clínica MedVida. Ele apresenta informações essenciais sobre os serviços médicos, além de permitir que pacientes encontrem **endereços, horários e preços** de maneira rápida.
 
-### Horário de Atendimento
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** um pequeno texto falando sobre os serviços, e uma tabela de preços, onde cada linha é um serviço, com o preço de cada um de acordo com os dias da semana.
+A navegação do site inclui:
+- **Página principal:** Introdução sobre a clínica e seu compromisso com a saúde.
+- **Página "Sobre a Clínica"**: História e estrutura da MedVida.
+- **Especialidades Médicas:** Cardiologia, Ginecologia e Neurologia.
+- **Horário de Atendimento:** Disponibilidade dos médicos por dia da semana.
+- **Contato:** Formulário de contato e mapa de localização.
 
-|Serviços |Segunda a Sexta | Sábados | Feriados |
-|---|---|---|---|
-|Clínica geral | 08h - 19h  | 08h - 14h | 08h - 14h  |
-|Psicologia | 08h - 19h  | 08h - 14h | 08h - 14h  |
-|Pediatria | 08h - 19h  | 08h - 18h | - |
-|Oftalmologia | 08h - 19h  | 08h - 18h | - |
-|||||
+---
 
-3. **Menu** e **Footer** padrões em todas as páginas.
+## 🛠 Ferramentas Utilizadas
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+- **HTML5** → Para a estruturação das páginas.
+- **CSS3** → Para estilização e layout responsivo.
+- **Google Maps API** → Para exibir a localização da clínica.
+- **Live Server (VS Code Plugin)** → Para visualizar as alterações em tempo real.
+- **DevTools (Chrome/Firefox)** → Para inspeção e otimização do site.
+
+---
+
+## 🏗 Estrutura do Projeto
+
+A organização dos arquivos do projeto segue a seguinte estrutura:
 
 
-### Contato
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** deve ter:
-    - Os telefones de contato (celular e whatsapp)
-    - Endereço completo da clínica
-    - Um Iframe com o Google Maps apontando o endereço da clínica
-    - Um formulário de contato com:
-        - Nome (type="text")
-        - E-mail (type="email")
-        - Assunto (type="text")
-        - Mensagem (textarea)
-        - Botões de envias e limpar formulário
+---
 
-3. **Menu** e **Footer** padrões em todas as páginas.
+## 📌 Layout e Design
 
-Desafio está lançado! Com tudo que aprendemos no Módulo II é perfeitamente possível criar este site! 
+O site conta com um **menu lateral** fixo para facilitar a navegação, além de um **cabeçalho visualmente atrativo** com imagens representativas. O layout foi pensado para oferecer **acessibilidade** e **facilidade na leitura** das informações.
 
-Bora pra cima!
+- **As tabelas de horários e preços** possuem um design clean, com cores destacadas para melhor visualização.
+- **Os formulários** possuem botões intuitivos e validação para garantir que as mensagens sejam enviadas corretamente.
+
+---
+
+## 🎨 Exemplo de Tabela de Preços
+
+| Serviço       | Segunda a Sexta | Sábado | Feriado |
+|--------------|----------------|--------|---------|
+| Cardiologia  | 08h - 19h       | 08h - 14h | 08h - 14h |
+| Ginecologia  | 08h - 19h       | 08h - 14h | - |
+| Neurologia   | 08h - 19h       | 08h - 19h | 08h - 14h |
+
+---
+
+## 📷 Visualização
+
+Você pode visualizar o projeto de duas formas:
+
+1. **Abrindo o arquivo diretamente no navegador**
+   - Baixe os arquivos do projeto e abra o `home.html` em seu navegador.
+
+2. **Usando o Live Server no VS Code**
+   - Instale a extensão **Live Server** no VS Code.
+   - Clique com o botão direito no arquivo `home.html` e selecione **"Open with Live Server"**.
+
+---
+
+## 📖 Referências
+
+Aqui estão algumas fontes utilizadas para o desenvolvimento deste projeto:
+
+- [MDN Web Docs (Mozilla)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [W3 Schools](https://www.w3schools.com/)
+- [Google Maps API](https://developers.google.com/maps/)
+- [Curso em Vídeo - HTML e CSS](https://www.youtube.com/c/CursoemV%C3%ADdeo)
+
+---
+
+## 👤 Autor
+
+Este projeto foi desenvolvido por:
+
+**Lucas Cabral Soares**  
+📧 Email: [lucas-cabral-soares@hotmail.com](mailto:lucas-cabral-soares@hotmail.com)  
+🔗 GitHub: [lucas-csoares](https://github.com/lucas-csoares)
+
+
+
+
+
+
