@@ -1,3 +1,4 @@
+/*>>>>>>>>>> ESTRUTURA BÁSICA >>>>>>>>>>>>>>>*/
 html, body {
     margin: 0;
 }
@@ -29,26 +30,26 @@ body {
 
 
 .menu ul {
-    list-style: none; /* Remove os pontos da lista */
-    padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove margens extras */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 .menu ul li {
-    margin-bottom: 10px; /* Espaço entre os itens li*/
+    margin-bottom: 10px;
 }
 
 .menu ul li a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #FFFFFF; /* Define a cor do texto */
+    text-decoration: none; 
+    color: #FFFFFF; 
     font-size: 18px;
     font-weight: bold;
-    display: block; /* Faz com que o link ocupe a largura total */
+    display: block; 
     padding: 10px;
 }
 
 .menu ul li a:hover {
-    background-color: rgb(85, 98, 82); /* Cor de fundo ao passar o mouse */
-    color: white; /* Muda a cor do texto */
+    background-color: rgb(85, 98, 82); 
+    color: white; 
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -59,40 +60,40 @@ body {
 .header-sobre{
     background-color: rgb(22, 7, 228);
     min-height: 150px;
-    width: 100%; /* Faz com que o header ocupe toda a largura */
-    height: 300px; /* Defina uma altura fixa ou use `vh` para altura dinâmica */
-    overflow: hidden; /* Evita que a imagem vaze para fora do container */
+    width: 100%; 
+    height: 300px; 
+    overflow: hidden; 
 }
 .header-atendimento {
     background-color: rgb(22, 7, 228);
     min-height: 150px;
-    text-align: left; /* Garante que os elementos fiquem alinhados à esquerda */
-    white-space: nowrap; /* Impede que as imagens quebrem de linha */
+    text-align: left; 
+    white-space: nowrap; 
     overflow: hidden;
 
 }
 .header-contato {
     background-color: rgb(22, 7, 228);
     width: 100%;
-    height: 500px; /* Ou use `100vh` para ocupar toda a tela */
-    overflow: hidden; /* Evita que a imagem ultrapasse os limites do container */
-    position: relative; /* Necessário para que a imagem fique dentro corretamente */
+    height: 500px; 
+    overflow: hidden;
+    position: relative; 
 }
 .header-atendimento img{
-    display: inline-block; /* Faz com que as imagens fiquem lado a lado */
-    vertical-align: middle; /* Garante alinhamento vertical */
+    display: inline-block; 
+    vertical-align: middle; 
 
 }
 .colaboradores {
-    width: 100%; /* Faz a imagem ocupar toda a largura */
-    height: 100%; /* Faz a imagem ocupar toda a altura */
-    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
 }
 .contato {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem cobrir o espaço do container */
-    object-position: top; /* Ajusta a imagem para mostrar mais a parte superior */
+    object-fit: cover; 
+    object-position: top; 
     position: absolute;
     top: 0;
     left: 0;
@@ -121,9 +122,11 @@ figure {
     margin-top: 50px;
 }
 
+/*>>>>>>>>>> TABELA >>>>>>>>>>>>>>>*/
+
 table {
 
-    width: 100%; /* Ajusta a largura total da tabela */
+    width: 100%; 
     
     border-collapse: collapse;
 
@@ -145,7 +148,7 @@ table thead th{
 }
 
 
-table tbody tr:nth-child(even) td { /*nth-child: captura os pares*/
+table tbody tr:nth-child(even) td { 
     
     background-color: #f1f1f1;
     
@@ -153,7 +156,7 @@ table tbody tr:nth-child(even) td { /*nth-child: captura os pares*/
     
       
     
-table tbody tr:hover td{ /*nth-child: captura os pares*/
+table tbody tr:hover td{ 
     
     background-color: #E9E9E9;
         
@@ -163,10 +166,12 @@ table tbody tr:hover td{ /*nth-child: captura os pares*/
 
 
 th, td {
-    padding: 10px; /* Adiciona espaço interno */
+    padding: 10px; 
     text-align: center;
-    white-space: nowrap; /* Impede quebra de linha no conteúdo */
+    white-space: nowrap; 
 }
+
+/*>>>>>>>>>> FORMULÁRIO >>>>>>>>>>>>>>>*/
 
 .form-container {
     background: white;
@@ -192,7 +197,7 @@ input, textarea {
 }
 
 textarea {
-    resize: none; /* Impede redimensionamento manual */
+    resize: none; 
 }
 
 .button-container {
@@ -229,6 +234,8 @@ button {
     background-color: #c82333;
 }
 
+
+/*>>>>>>>>>> RODAPÉ >>>>>>>>>>>>>>>*/
 
 .footer {
     background-color: rgb(22, 7, 228);
