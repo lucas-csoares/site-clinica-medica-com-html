@@ -178,8 +178,11 @@ th, td {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 350px;
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 100%; /* Garante que não ultrapasse a tela */
+    box-sizing: border-box; /* Evita que o padding aumente o tamanho do elemento */
 }
+
 
 label {
     display: block;
