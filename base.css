@@ -20,19 +20,224 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: #28a745;
     padding: 10px 20px 0px;
 }
+.menu h1 {
+    color: white;
+}
+
+
+.menu ul {
+    list-style: none; /* Remove os pontos da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove margens extras */
+}
+.menu ul li {
+    margin-bottom: 10px; /* Espaço entre os itens li*/
+}
+
+.menu ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #FFFFFF; /* Define a cor do texto */
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Faz com que o link ocupe a largura total */
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(85, 98, 82); /* Cor de fundo ao passar o mouse */
+    color: white; /* Muda a cor do texto */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: rgb(22, 7, 228);
     min-height: 150px;
 }
+.header-sobre{
+    background-color: rgb(22, 7, 228);
+    min-height: 150px;
+    width: 100%; /* Faz com que o header ocupe toda a largura */
+    height: 300px; /* Defina uma altura fixa ou use `vh` para altura dinâmica */
+    overflow: hidden; /* Evita que a imagem vaze para fora do container */
+}
+.header-atendimento {
+    background-color: rgb(22, 7, 228);
+    min-height: 150px;
+    text-align: left; /* Garante que os elementos fiquem alinhados à esquerda */
+    white-space: nowrap; /* Impede que as imagens quebrem de linha */
+    overflow: hidden;
+
+}
+.header-contato {
+    background-color: rgb(22, 7, 228);
+    width: 100%;
+    height: 500px; /* Ou use `100vh` para ocupar toda a tela */
+    overflow: hidden; /* Evita que a imagem ultrapasse os limites do container */
+    position: relative; /* Necessário para que a imagem fique dentro corretamente */
+}
+.header-atendimento img{
+    display: inline-block; /* Faz com que as imagens fiquem lado a lado */
+    vertical-align: middle; /* Garante alinhamento vertical */
+
+}
+.colaboradores {
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+}
+.contato {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir o espaço do container */
+    object-position: top; /* Ajusta a imagem para mostrar mais a parte superior */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profissionais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+}
+
+
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
 }
+
+.content blockquote{
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+
+    width: 100%; /* Ajusta a largura total da tabela */
+    
+    border-collapse: collapse;
+
+    box-shadow: 11px 10px 5px 5px rgba(0,0,0,0.25);
+
+    -webkit-box-shadow: 11px 10px 5px 5px rgba(0,0,0,0.25);
+    
+    -moz-box-shadow: 11px 10px 5px 5px rgba(0,0,0,0.25);
+    
+    border: solid 1px gray;
+}
+
+table thead th{
+
+    background-color: rgb(22, 7, 228);
+    
+    color: white;
+    
+}
+
+
+table tbody tr:nth-child(even) td { /*nth-child: captura os pares*/
+    
+    background-color: #f1f1f1;
+    
+}
+    
+      
+    
+table tbody tr:hover td{ /*nth-child: captura os pares*/
+    
+    background-color: #E9E9E9;
+        
+    cursor: pointer
+
+}
+
+
+th, td {
+    padding: 10px; /* Adiciona espaço interno */
+    text-align: center;
+    white-space: nowrap; /* Impede quebra de linha no conteúdo */
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none; /* Impede redimensionamento manual */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #c82333;
+}
+
+
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(22, 7, 228);
+    padding-top: 20px;
     min-height: 150px;
 }
+.footer p {
+    text-align: center;
+    color: white;
+}
+
+
