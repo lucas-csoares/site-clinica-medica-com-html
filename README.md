@@ -67,7 +67,7 @@ O site conta com um **menu lateral** fixo para facilitar a navegação, além de
 
 ---
 
-## 🎨 Exemplo de Tabela de Preços
+## 🎨 Exemplo de Tabela de horário
 
 | Serviço       | Segunda a Sexta | Sábado | Feriado |
 |--------------|----------------|--------|---------|
